@@ -1,0 +1,17 @@
+{
+	"name": "3_create_eff",
+	"properties": {
+		"content": {
+			"query": "USE fmdp_db;\nGO\n\nIF NOT EXISTS (SELECT * FROM sys.external_file_formats WHERE name = 'eff_delta')\nBEGIN\n    CREATE EXTERNAL FILE FORMAT eff_delta\n    WITH (\n        FORMAT_TYPE = DELTA\n    );\nEND\nGO",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "fmdp_db",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

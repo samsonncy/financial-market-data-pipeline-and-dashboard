@@ -1,0 +1,17 @@
+{
+	"name": "2_create_eds",
+	"properties": {
+		"content": {
+			"query": "USE fmdp_db;\nGO\n\nIF NOT EXISTS (SELECT * FROM sys.database_scoped_credentials WHERE name = 'synapse_identity')\nBEGIN\n    CREATE DATABASE SCOPED CREDENTIAL synapse_identity\n    WITH IDENTITY = 'Managed Identity';\nEND\nGO\n\nIF NOT EXISTS (SELECT * FROM sys.external_data_sources WHERE name = 'eds_fmdpstg2_fd_gld')\nBEGIN\n    CREATE EXTERNAL DATA SOURCE eds_fmdpstg2_fd_gld\n    WITH (\n        LOCATION = 'abfss://financial-data@fmdpstg2.dfs.core.windows.net/gold/',\n        CREDENTIAL = synapse_identity\n    );\nEND\nGO",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "fmdp_db",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
