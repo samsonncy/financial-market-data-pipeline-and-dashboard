@@ -5,7 +5,7 @@
 			"name": "4_create_or_replace_external_tables"
 		},
 		"content": {
-			"query": "USE fmdp_db;\nGO\n\nIF EXISTS (SELECT * FROM sys.external_tables WHERE name = 'gld_av_time_series_daily')\nBEGIN\n    DROP EXTERNAL TABLE gld_av_time_series_daily;\nEND\n\nCREATE EXTERNAL TABLE gld_av_time_series_daily\n(\n    [date] DATE,\n    [symbol] VARCHAR(20),\n    [open] FLOAT,\n    [high] FLOAT,\n    [low] FLOAT,\n    [close] FLOAT,\n    [volume] BIGINT,\n    [adjusted_close] FLOAT\n)\nWITH (\n    LOCATION = '/gld_av_time_series_daily',\n    DATA_SOURCE = eds_fmdpstg2_fd_gld,\n    FILE_FORMAT = eff_delta\n);\nGO",
+			"query": "USE fmdp_db;\nGO\n\nIF EXISTS (SELECT * FROM sys.external_tables WHERE name = 'gld_av_time_series_daily')\nBEGIN\n    DROP EXTERNAL TABLE gld_av_time_series_daily;\nEND\n\nCREATE EXTERNAL TABLE gld_av_time_series_daily\n(\n    [date] DATE,\n    [symbol] VARCHAR(20) NULL,\n    [open] FLOAT,\n    [high] FLOAT,\n    [low] FLOAT,\n    [close] FLOAT,\n    [volume] BIGINT,\n    [ma_5] FLOAT,\n    [ma_200] FLOAT,\n    [volatility_5d] FLOAT,\n    [volatility_20d] FLOAT,\n    [normalized_close] FLOAT,\n    [signal_ma_crossover] VARCHAR(100),\n    [spy_return] FLOAT,\n    [relative_strength] FLOAT,\n    [year] INT,\n    [month] INT\n)\nWITH (\n    LOCATION = '/gld_av_time_series_daily',\n    DATA_SOURCE = eds_fmdpstg2_fd_gld,\n    FILE_FORMAT = eff_delta\n);\nGO",
 			"metadata": {
 				"language": "sql"
 			},
