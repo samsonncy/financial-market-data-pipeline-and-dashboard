@@ -1,0 +1,17 @@
+{
+	"name": "1_create_db",
+	"properties": {
+		"content": {
+			"query": "IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'fmdp_db')\nBEGIN\n    CREATE DATABASE fmdp_db;\nEND\nGO\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
