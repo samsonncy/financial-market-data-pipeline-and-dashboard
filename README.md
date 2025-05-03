@@ -15,12 +15,17 @@ This is a portfolio project that demonstrates the design and implementation of a
 ---
 
 ## 🗂️ Repository Structure
-├── databricks/ # PySpark notebooks (src-to-brz, brz-to-sil, sil-to-gld) 
-├── power_bi/ # Dashboard (.pbix) & documentation 
-├── synapse/ # (Planned) Synapse integration components 
-├── terraform/ # IaC scripts for provisioning Azure resources 
+├── databricks/ PySpark notebooks (src-to-brz, brz-to-sil, sil-to-gld)
+
+├── power_bi/ Dashboard (.pbix) & documentation
+
+├── synapse/ (Planned) Synapse integration components 
+
+├── terraform/ IaC scripts for provisioning Azure resources 
+
 ├── .gitignore 
-└── README.md # ← You're here
+
+└── README.md ← You're here
 
 
 ---
@@ -30,16 +35,16 @@ This is a portfolio project that demonstrates the design and implementation of a
 **Data Source:** [Alpha Vantage API](https://www.alphavantage.co/documentation/)  
 **Stock Symbols Tracked:** `AAPL`, `AMZN`, `GOOGL`, `META`, `MSFT`, `NVDA`, `TSLA`, `QQQ`, `SPY`  
 **Architecture:**  
-Alpha Vantage API ↓ Databricks (Bronze → Silver → Gold Delta Tables) ↓ Power BI (via Azure Synapse Analytics or direct query)
+Alpha Vantage API -> Databricks (Bronze → Silver → Gold Delta Lake Tables) -> Power BI (via Azure Synapse Analytics or direct query)
 
 
 ---
 
 ## 📊 Dashboard Preview
 
-Find detailed visuals and layout documentation in [`/power_bi`](./power_bi/).
+![image](https://github.com/user-attachments/assets/8d7b3b19-f523-4efd-862e-157b7fe87ec1)
 
-![Dashboard Screenshot](power_bi/dashboard_preview.png)
+
 
 ---
 
