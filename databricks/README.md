@@ -49,14 +49,14 @@ Each notebook begins with the same configuration code to establish authenticatio
 
 ```python
 # Retrieve secrets
-secret_scope_name = "fmdp-secrets"
+secret_scope_name = "your-secret-scope-name"
 client_id = dbutils.secrets.get(scope=secret_scope_name, key="fmdp-databricks-sp-client-id")
 client_secret = dbutils.secrets.get(scope=secret_scope_name, key="fmdp-databricks-sp-client-secret")
 tenant_id = dbutils.secrets.get(scope=secret_scope_name, key="tenant-id")
 alpha_vantage_api_key = dbutils.secrets.get(scope=secret_scope_name, key="fmdp-alpha-vantage-api-key")
 
 # Define storage paths
-storage_account_name = "fmdpstg2"
+storage_account_name = "your-storage-account-name"
 bronze_path = f"abfss://financial-data@{storage_account_name}.dfs.core.windows.net/bronze"
 silver_path = f"abfss://financial-data@{storage_account_name}.dfs.core.windows.net/silver"
 gold_path = f"abfss://financial-data@{storage_account_name}.dfs.core.windows.net/gold"
