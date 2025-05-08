@@ -34,8 +34,11 @@ This is a portfolio project that demonstrates the design and implementation of a
 
 **Data Source:** [Alpha Vantage API](https://www.alphavantage.co/documentation/)  
 **Stock Symbols Tracked:** `AAPL`, `AMZN`, `GOOGL`, `META`, `MSFT`, `NVDA`, `TSLA`, `QQQ`, `SPY`  
-**Architecture:**  
-Alpha Vantage API -> Databricks (Bronze → Silver → Gold Delta Lake Tables) -> Power BI (via Azure Synapse Analytics or direct query)
+**Architecture:** 
+
+![image](https://github.com/user-attachments/assets/e2d9b460-06ca-44c3-9f02-cbb0f4920572)
+
+
 
 
 ---
