@@ -13,8 +13,7 @@ This is a portfolio project that demonstrates the design and implementation of a
 
 ## Architecture Overview
 
-![image](https://github.com/user-attachments/assets/3ac24d7e-2d8e-49ab-ab8c-744e0ca181e4)
-
+![image](https://github.com/user-attachments/assets/901bf600-5500-4a26-aeb9-9fef522f90a8)
 
 The architecture follows a modern data engineering approach:
 
