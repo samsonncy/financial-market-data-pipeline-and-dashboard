@@ -1,4 +1,4 @@
-# Financial Market Dashboard (Azure x Databricks x Power BI)
+# Financial Market Dashboard (Azure x Databricks x Synapse x Power BI)
 
 This project showcases a **real-world, cloud-based financial data pipeline** built using the **medallion architecture** (Bronze–Silver–Gold), powered by **Azure Databricks**, **Delta Lake**, and visualized through **Power BI**. It retrieves daily stock data from the Alpha Vantage API, processes it using PySpark, and delivers a rich dashboard experience for financial trend analysis.
 
