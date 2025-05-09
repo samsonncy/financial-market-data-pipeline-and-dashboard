@@ -74,13 +74,38 @@ The project implements a complete medallion architecture data pipeline:
 
 ## Dashboard Preview
 
-![Power BI Dashboard Preview](https://github.com/user-attachments/assets/8d7b3b19-f523-4efd-862e-157b7fe87ec1)
+![image](https://github.com/user-attachments/assets/e7861b59-97a8-4b05-9160-9a5354c6f666)
+
 
 The interactive dashboard provides:
-- Price trend analysis with moving averages
-- Daily return distribution and volatility metrics
-- Comparative performance against market benchmarks
-- Technical indicator signals for potential investment decisions
+
+- **Latest Market Snapshot**  
+  - Displays the latest **Close**, **High**, **Low**, **Volume**, and **Day-over-Day (DoD)** changes.  
+  - Automatically updates to reflect the most recent trading day.
+
+- **Symbol Selector**  
+  - Interactive buttons for switching between major stocks (e.g., `AAPL`, `AMZN`, `TSLA`, etc.).  
+  - Updates all visuals across the dashboard based on the selected symbol.
+
+- **Close Price Trend with Moving Averages**  
+  - Line chart showing daily closing prices.  
+  - Includes **20-day** and **200-day** moving averages for trend analysis.  
+  - User-controlled date range filtering.
+
+- **Daily Volume Chart**  
+  - Bar chart visualizing daily trading volume.  
+  - Useful for spotting volume surges and liquidity changes.
+
+- **Day-of-Week Performance**  
+  - Average daily return by weekday (Monday to Friday).  
+  - Helps identify potential behavioral patterns or inefficiencies.
+
+- **Monthly Return Heatmap**  
+  - Calendar-style heatmap showing monthly return percentages by year.  
+  - Highlights seasonality, strong/weak months, and year-over-year trends.
+
+
+
 
 ## Technical Implementation
 
