@@ -13,7 +13,8 @@ This is a portfolio project that demonstrates the design and implementation of a
 
 ## Architecture Overview
 
-![Financial Market Data Pipeline Architecture](https://github.com/user-attachments/assets/e2d9b460-06ca-44c3-9f02-cbb0f4920572)
+![image](https://github.com/user-attachments/assets/3ac24d7e-2d8e-49ab-ab8c-744e0ca181e4)
+
 
 The architecture follows a modern data engineering approach:
 
