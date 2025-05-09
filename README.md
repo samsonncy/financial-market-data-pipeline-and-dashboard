@@ -104,7 +104,7 @@ The interactive dashboard provides:
   - Calendar-style heatmap showing monthly return percentages by year.  
   - Highlights seasonality, strong/weak months, and year-over-year trends.
 
-
+#### * The latest version is accessible at [`power_bi`](./power_bi).
 
 
 ## Technical Implementation
